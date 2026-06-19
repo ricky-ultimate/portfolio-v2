@@ -15,20 +15,32 @@ export type ExternalLink = {
 };
 
 export const scribbles: Scribble[] = [
-//   {
-//     title: "Why I stopped fighting my database",
-//     excerpt:
-//       "Most backend bugs I've encountered weren't logic errors. They were me disagreeing with Postgres and losing.",
-//     date: "June 2026",
-//     slug: "why-i-stopped-fighting-my-database",
-//     content: `Most backend bugs I've encountered weren't logic errors. They were me disagreeing with Postgres and losing.
+  {
+    title: "The Art of Loving the Ordinary",
+    excerpt:
+      "Anyone can love a flower, but it takes a lot to love a leaf. It's ordinary to love the beautiful, but it's beautiful to love the ordinary.",
+    date: "September 2024",
+    slug: "the-art-of-loving-the-ordinary",
+    content: `"Anyone can love a flower, but it takes a lot to love a leaf. It's ordinary to love the beautiful, but it's beautiful to love the ordinary."
 
-// When I first started writing backend systems, I treated the database like a dumb storage layer. Send it data, get data back. The real logic lives in the application, right?
+In a world that constantly pushes us to chase the extraordinary, we often forget the quiet beauty that exists in the most common things. The simplicity of a leaf falling from a tree, the way sunlight filters through blinds in the early morning, or even the sound of rain tapping on a window — these are moments we might overlook, but they hold a profound sense of calm and meaning when we take a moment to truly notice them.
 
-// That worked until it didn't. Race conditions, stale reads, cascading failures — all of it traced back to me not trusting the database to do what it's actually very good at.
+There's something special about the unremarkable moments. They don't demand attention, they don't shout for validation. They simply exist, ready to be appreciated by those willing to slow down and observe. In a way, it's the lack of grandeur that makes them so captivating. When you start to see beauty in the ordinary, the world around you becomes a little softer, a little more serene.
 
-// Postgres has transactions, constraints, triggers, and window functions for a reason. The moment I started leaning into those instead of reimplementing them in Python, things got a lot quieter at 2am.`,
-//   },
+It's easy to love the dazzling flower in full bloom, but it takes something more to notice the beauty of a single leaf, fragile yet strong, carrying its own quiet elegance. That's where true appreciation lies: not in the grand gestures, but in the details we often pass by.
+
+As someone who finds peace in the small things, I've learned to savor the sense of calm they bring. The world is fast-paced, constantly moving, but there's a certain tranquility in stepping away from that rush and embracing the everyday. A cup of tea on a cold morning, the pattern of shadows on the wall as the day unfolds, the steady hum of life around us — all these moments invite us to pause and breathe.
+
+In these moments, the complexity of the world fades away, leaving space for simplicity. It's in this space that I find my center, a place where peace is born from the most ordinary things. Sometimes, it's not about doing more, achieving more, or even being more. Sometimes, it's about noticing what's already there.
+
+It wasn't always easy for me to embrace this way of thinking. Like many, I used to believe that happiness was tied to the bigger moments: achievements, celebrations, and milestones. But over time, I've come to realize that life isn't just about those highs. It's about everything in between. The moments that make up our daily existence are just as valuable, if not more so, because they are constant. They are always there, waiting to be noticed and appreciated.
+
+Learning to love the ordinary isn't just about finding beauty. It's about embracing a different mindset. It's about letting go of the need for constant excitement or validation and finding peace in the steady rhythm of life. It's in the ordinary that we can truly connect with ourselves and the world around us.
+
+As you navigate your own journey, I invite you to take a moment and slow down. Look around. Notice the small things, the things that seem insignificant at first glance. You might be surprised at the beauty they hold. Life doesn't have to be extraordinary to be meaningful. In fact, it's in the simplicity of the ordinary that we often find the most profound sense of peace.
+
+So here's to the leaf, the rain, the shadow on the wall. Here's to the quiet beauty of the everyday, and to finding the calmness we all need in the midst of it all. Here's to finding the extraordinary in the ordinary.`,
+  },
 ];
 
 export const externalLinks: ExternalLink[] = [
