@@ -25,7 +25,7 @@ export default function ProjectAccordion({
               onClick={() => toggle(index)}
               className="flex items-center justify-between w-full py-6 text-left group"
             >
-              <span className="text-xl font-semibold tracking-tight text-white group-hover:text-white/70 transition-colors duration-200">
+              <span className="text-lg sm:text-xl font-semibold tracking-tight text-white group-hover:text-white/70 transition-colors duration-200">
                 {project.name}
               </span>
               <span
@@ -39,8 +39,8 @@ export default function ProjectAccordion({
               className={`grid transition-all duration-500 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
             >
               <div className="overflow-hidden">
-                <div className="flex items-start gap-12 pb-10">
-                  <div className="w-[420px] h-[260px] shrink-0 overflow-hidden bg-white/5 rounded-sm">
+                <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:gap-12 pb-10">
+                  <div className="w-full sm:w-[420px] sm:h-[260px] aspect-video sm:aspect-auto shrink-0 overflow-hidden bg-white/5 rounded-sm">
                     <Image
                       src={project.image}
                       alt={project.name}
@@ -50,8 +50,8 @@ export default function ProjectAccordion({
                     />
                   </div>
 
-                  <div className="flex flex-col gap-5 pt-1">
-                    <p className="text-sm leading-relaxed text-white/55 font-light max-w-sm">
+                  <div className="flex flex-col gap-5 sm:pt-1">
+                    <p className="text-sm leading-relaxed text-white/55 font-light sm:max-w-sm">
                       {project.description}
                     </p>
                     <div className="flex gap-4">

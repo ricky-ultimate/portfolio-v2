@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function PageHeader() {
   return (
-    <header className="flex items-start justify-between w-full">
-      <div className="flex gap-20 text-sm tracking-wide text-white/70 font-light">
+    <header className="flex items-start justify-between w-full mb-8 sm:mb-0">
+      <div className="flex flex-col gap-3 sm:flex-row sm:gap-12 lg:gap-20 text-sm tracking-wide text-white/70 font-light">
         <Link
           href="/"
           className="leading-snug hover:text-white transition-colors duration-200"
@@ -15,7 +15,7 @@ export default function PageHeader() {
           <br />
           Backend Specialist
         </span>
-        <span className="leading-snug">
+        <span className="leading-snug hidden sm:block">
           Currently in
           <br />
           Nigeria
@@ -26,7 +26,7 @@ export default function PageHeader() {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-[9px] tracking-widest text-white/70 hover:bg-white hover:text-black transition-colors duration-300 font-light uppercase"
+        className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-[9px] tracking-widest text-white/70 hover:bg-white hover:text-black transition-colors duration-300 font-light uppercase shrink-0"
       >
         CV
       </a>
