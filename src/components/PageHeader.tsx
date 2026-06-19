@@ -26,7 +26,7 @@ export default function PageHeader() {
         href="/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-9 h-9 rounded-full border border-white/30 flex items-center justify-center text-[9px] tracking-widest text-white/70 hover:bg-white hover:text-black transition-colors duration-300 font-light uppercase shrink-0"
+        className="w-9 h-9 rounded-full border border-white/60 flex items-center justify-center text-[11px] tracking-widest text-white/70 hover:bg-white hover:text-black transition-colors duration-300 font-light uppercase shrink-0"
       >
         CV
       </a>
