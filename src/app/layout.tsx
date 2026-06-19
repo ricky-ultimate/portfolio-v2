@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import PageHeader from "@/components/PageHeader";
+import PageFooter from "@/components/PageFooter";
 import "./globals.css";
 
 const caskaydia = localFont({
@@ -31,10 +33,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${caskaydia.variable} h-full`}>
       <body
-        className="min-h-full flex flex-col bg-[#0e0e0e] text-white px-30 py-15"
+        className="min-h-screen flex flex-col bg-[#0e0e0e] text-white px-6 py-8 sm:px-12 sm:py-12 md:px-20 md:py-12 lg:px-30 lg:py-15"
         style={{ fontFamily: "var(--font-primary), monospace" }}
       >
-        {children}
+        <PageHeader />
+        <div className="flex flex-col flex-1">{children}</div>
+        <PageFooter />
       </body>
     </html>
   );

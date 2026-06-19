@@ -1,12 +1,13 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-type Props = {
-  active?: "projects" | "scribbles";
-};
+export default function PageFooter() {
+  const pathname = usePathname();
 
-export default function PageFooter({ active }: Props) {
   return (
-    <footer className="flex items-center gap-20 text-sm tracking-wide font-light mt-auto pt-10 border-t border-white/10">
+    <footer className="flex flex-wrap items-center gap-x-10 gap-y-3 text-sm tracking-wide font-light mt-auto pt-10 border-t border-white/10">
       <a
         href="https://richesogigi.dev"
         target="_blank"
@@ -18,7 +19,7 @@ export default function PageFooter({ active }: Props) {
       <Link
         href="/projects"
         className={
-          active === "projects"
+          pathname.startsWith("/projects")
             ? "text-white"
             : "text-white/70 hover:text-white transition-colors duration-200"
         }
@@ -28,7 +29,7 @@ export default function PageFooter({ active }: Props) {
       <Link
         href="/scribbles"
         className={
-          active === "scribbles"
+          pathname.startsWith("/scribbles")
             ? "text-white"
             : "text-white/70 hover:text-white transition-colors duration-200"
         }
